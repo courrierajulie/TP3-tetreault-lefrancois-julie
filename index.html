@@ -2,17 +2,152 @@
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8" />
-	<title>Ma première page web</title>
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-</head> 
+	<meta charset="utf-8">
+	<title>TP3-Tetreault-Lefrancois Julie - Accueil</title>
+	<meta name="description" content="Index - Site web fictif dans le cadre du cours Techniques d'intégration des interfaces Web 1">
+	<!-- Balise meta à utiliser pour gérer l'affichage sur les appareils mobile, tablette, etc. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="favicon.png">
+</head>  
 
 <body>
-	<!-- Élément <div> qui sert à center le contenu dans la page (container) -->
-	<div class="container">
-		<!-- Vous devez ajouter vos balises sous ce commentaire -->
-	</div>
+<!-- header -->
+	<header>
+		<div class="container">
+			<div class="flex-barre-de-navigation">
+			<!-- intégrer image logo ici -->
+			<a href="#"><img src="img/logo.png" alt="Logo Burger Shop"></a>
+					<nav>
+						<ul>
+							<li><a class="actuel" href="index.html">Menu</a></li>
+							<li><a href="reservation.html">Réservation</a></li>
+							<li><a href="restaurant.html">Restaurant</a></li>
+							<li><a class="btn-nav" href="commande.html">Ma commande</a></li>
+						</ul>
+					</nav>
+			</div>
+		</div>
+	</header>
+
+<main>
+<!-- Section Nos burgers -->
+	<section>
+		<div class="container">  
+			<h1>Nos burgers</h1>
+			<div class="flex-colonnes">
+				<div class="col-quart-carte">
+					<img src="img/menu/commodo.png" alt="Burger Le Commodo">
+					<h3>Le Commodo</h3>
+					<h4>9,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/lorem.png" alt="Burger Le Lorem">
+					<h3>Le Lorem</h3>
+					<h4>12,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/dolar-met.png" alt="Burger Le Dolar Met">
+					<h3>Le Dolar Met</h3>
+					<h4>8,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/fugiat.png" alt="Burger Le fugiat">
+					<h3>Le Fugiat</h3>
+					<h4>11,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</div> 
+	</section>
+
+	<section>
+		<div class="container">  
+			<div class="flex-colonnes">
+				<div class="col-demi-carte">
+					<img src="img/menu/laboris.png" alt="Burger Le Laboris">
+					<h3>Le Laboris</h3>
+					<h4>12,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/cubidatat.png" alt="Burger Le Cubidatat">
+					<h3>Le Cubidatat</h3>
+					<h4>14,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</div> 
+	</section>
+
+<!-- Section Nos beignes -->
+	<section>
+		<div class="container beigne">  
+			<h2>Nos beignes</h2>
+			<div class="flex-colonnes">
+				<div class="col-quart-carte">
+					<img src="img/menu/etiam.png" alt="Beigne Le Etiam">
+					<h3>Le Etiam</h3>
+					<h4>3,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/malesuada.png" alt="Beigne Le Malesuada">
+					<h3>Le Malesuada</h3>
+					<h4>2,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/vestibulum.png" alt="Beigne Le Vestibulum">
+					<h3>Le Vestibulum</h3>
+					<h4>1,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="col-quart-carte">
+					<img src="img/menu/maximus.png" alt="Beigne Le Maximus">
+					<h3>Le Maximus</h3>
+					<h4>2,99$</h4>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</div> 
+	</section>
+</main>
+
+<!-- Section div class="dark" -->
+	<section class="dark">
+		<div class="container">
+    		<img class="float-right" src="img/t-shirt.png" alt="Vêtement corporatif Burger Shop">
+			<h4>Le t-shirt Burger Shop</h4>
+    		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis libero nesciunt nostrum
+    		doloribus hic cupiditate aut cum facere ratione, minima suscipit doloremque voluptas quaerat
+       		error, non culpa quo. Natus, vitae.</p>
+    		<a class="btn" href="#">Ajouter au panier</a>
+		</div>
+	</section>
+
+<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="flex-footer">
+				<div>
+				<p><strong>Burger Shop</strong> : 3175 Boul. Laviolette, Trois-Rivières, Qc</p>
+				</div>
+				<div class="btn-phone"><a href="tel:+14181234567">418-123-4567</a></div>
+			</div>
+		</div>
+		<div class="container-author">
+			<div>
+			<p>Site réalisé par : <strong>Julie Tétreault-Lefrançois</strong> | Dans le cadre du cours Techniques d'intégration des interfaces Web - Cégep de Trois-Rivières</p>
+			</div>
+		</div>
+	</footer>
+
 </body>
 
 </html>

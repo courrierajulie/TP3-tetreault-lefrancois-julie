@@ -1,11 +1,484 @@
+/* ressources externes - google fonts instructions */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600&display=swap');
+
+/*
+font-family: 'Bebas Neue', cursive; (h1, h2, h3...)
+font-family: 'Manrope', sans-serif; (p)
+*/
+
 *{ box-sizing: border-box;}
 
 body{
-	background-color: aliceblue;
+	background-color: rgb(237, 237, 237);
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: rgb(35, 35, 35);
 }
+
+
 
 .container{
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+/* Général */
+/* h1, h2, h3..., p */
+
+h1, h2{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: rgb(35, 35, 35);
+	line-height: 0px;
+}
+
+h3{
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: rgb(35, 35, 35);
+	line-height: 0px;
+}
+
+
+
+h4{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.8rem;
+	text-decoration: none;
+	color: rgb(35, 35, 35);
+}
+
+
+/* Section */
+
+section{
+padding-top: 50px;
+}
+
+
+
+
+/* Bouton */
+.btn{
+	background-color: rgb(35, 35, 35);
+	color: rgb(237, 237, 237);
+ 	padding: 10px 30px;
+	text-decoration: none;
+	line-height: 60px;
+}
+
+.btn:hover{
+	color: rgb(35, 35, 35);
+	background-color: rgb(245, 195, 10);
+ 	padding: 10px 30px;
+	text-decoration: none;
+	line-height: 60px;
+	border: 1px solid;
+}
+
+
+
+a{
+	text-decoration: none;
+	color: rgb(237, 237, 237);
+}
+
+a:hover{
+	text-decoration: none;
+	color: rgb(237, 237, 237);
+}
+
+/* header */
+
+header{
+	background-size: cover;
+	background-image: url("../img/mosaique/mosaique-4.png");
+	background-position: center;
+}
+
+
+
+.flex-barre-de-navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 20px;
+}
+
+nav ul{
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 0px;
+}
+
+nav a{
+	display: inline-block;
+	align-items: center;
+	padding: 5px 30px;
+	color: rgb(237, 237, 237);
+	background-color: rgb(35, 35, 35);
+}
+
+nav a:hover{
+	display: inline-block;
+	align-items: center;
+	padding: 5px 30px;
+	color: rgb(35, 35, 35);
+	background-color: rgb(245, 195, 10);
+}
+
+.btn-nav{
+    background-color: rgb(245, 195, 10);
+	line-height: 50px;
+	color: rgb(35,35,35);
+ 	padding: 0px 60px;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.btn-nav:hover{
+    background-color: rgb(237, 237, 237);
+	line-height: 50px;
+	color: rgb(35, 35, 35);
+ 	padding: 0px 60px;
+	font-weight: normal;
+}
+
+.actuel{
+	border: 1px solid;
+	color: rgb(237, 237, 237);
+}
+
+
+
+
+
+/* footer */
+footer{
+	background-color: rgb(35, 35, 35);
+}
+
+.flex-footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	background-color: rgb(35, 35, 35);
+}
+
+.flex-footer p{
+	color: rgb(237, 237, 237);
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.4rem;
+	text-decoration: none;
+	padding: 20px 0px;
+}
+
+
+
+
+
+
+
+
+.btn-phone{
+	background-color: rgb(35, 35, 35);
+	line-height: 50px;
+ 	padding: 5px 30px;
+	border: 1px solid;
+	color: rgb(237, 237, 237);
+}
+
+.btn-phone:hover{
+	background-color: rgb(245, 195, 10);
+}
+
+.container-author{
+	background-color: rgb(237, 237, 237);
+	padding: 10px 0px;
+}
+
+.container-author p{
+	color: rgb(35, 35, 35);
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	font-size: 0.8rem;
+	text-decoration: none;
+}
+
+
+/* Page index */
+
+
+/* Section nos burger */
+.flex-colonnes{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.col-quart-carte img{
+	width: 100%;
+}
+
+.col-demi-carte img{
+	width: 100%;
+}
+
+/* Section nos beignes */
+.beigne{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	}
+
+
+/* Section t-shirt */
+.dark{
+	background-color:  rgb(245, 195, 10);
+}
+
+section{
+	overflow: hidden;
+}
+  
+
+    
+.float-right{
+	float: right;
+	margin-left: 30px;
+}
+
+
+
+/* Page réservation (formulaire) */
+.flexbox-textPrenom-Nom{
+	display: flex;
+	flex-direction: row;
+}
+
+.flexbox-textarea{
+	display: flex;
+	flex-direction: column;
+}
+
+.form{
+	padding-bottom: 50px;
+	line-height: 30px;
+	max-width: 100%;
+}
+
+.textarea{
+	min-height: 200px;
+}
+
+
+
+label{
+	padding: 1px 10px;
+}
+
+input:focus{
+	background-color: rgb(233, 233, 233);
+}
+
+.confirm{
+	padding-top: 50px;
+	padding-bottom: 200px;
+	}
+
+
+/* Page restaurant (Grid) */
+
+.grid{	
+padding-top: 50px;
+padding-bottom: 1000px;
+max-width: 100%;
+}
+
+
+
+.position{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .grid-mosaique li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  #Salle-a-manger-sombre{
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+  }
+  
+  #Jardin-intérieur{
+	grid-column: 3;
+	grid-row: 1;
+  }
+  
+  #Cuisinier{
+	grid-column: 3;
+	grid-row: 2;
+  }
+  
+  #salle-a-manger-cuivre{
+	grid-column: 1;
+	grid-row: 1;
+  }
+  
+  
+  #Fenêtre-bistrôt{
+	grid-column: 1;
+	grid-row: 3;
+  }
+  
+  #Repas-au-restaurant{
+	grid-column: 1;
+	grid-row: 4;
+  }
+
+
+
+
+
+
+/* Page ma commande */
+
+.ma-commande{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.col-left{
+	width: 35%;
+	line-height: 1.5rem;
+}
+
+.conteneur-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.icone-flex{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.commande-flex{
+	display: flex;
+}
+
+.commande-flex p{
+	color: rgb(35, 35, 35);
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.4rem;
+	text-decoration: none;
+	padding: 0px 0px;
+	text-align: left;
+}
+
+.carte{
+	line-height: 1.5rem;
+	background-color: none;
+	border: 3px solid;
+	color: rgb(35, 35, 35);
+	padding: 15px 50px;
+}
+
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+
+.show-on-mobile{
+	/* Usage justifié de !important */
+	display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+	.grid-colonnes-std{
+		grid-template-columns: 1fr 1fr;
+	}
+	.boite h2{
+		font-size: 1.7rem;
+	}
+	.message img,
+	.message div{
+		width: 65%;
+	}
+
+
+	
+	
+	
+	
+	.btn{
+	margin: 10px;
+	}
+
+}
+
+@media screen and (max-width: 960px) {
+
+	h1, h2{
+		text-align: center;
+	}
+
+	.flex-colonnes{
+		flex-direction: row;
+		width: auto;
+		align-items: center;
+	}
+	
+	.col-quart-carte img,
+	.col-demi-carte img{
+		width: 65%
+	}
+	
+	
+	.col-demi-carte img{
+		width: 100%;
+		text-align: center;
+		margin: 40px;
+	}
+
+}
+
+@media screen and (max-width: 570px) {
+
+
+
+	h1, h2{
+		text-align: center;
+	}
+
+	.flex-colonnes{
+		flex-direction: column;
+		width: auto;
+		align-items: center;
+	}
+
+
+
+	.hide-on-mobile{
+		display: none !important;
+	}
+	.show-on-mobile{
+		display: block !important;
+	}
+
 }
