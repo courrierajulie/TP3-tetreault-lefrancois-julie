@@ -8,6 +8,10 @@ font-family: 'Manrope', sans-serif; (p)
 
 *{ box-sizing: border-box;}
 
+
+
+/* Général */
+
 body{
 	background-color: rgb(237, 237, 237);
 	font-family: 'Manrope', sans-serif;
@@ -16,15 +20,14 @@ body{
 	color: rgb(35, 35, 35);
 }
 
-
-
 .container{
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
-/* Général */
+
+
 /* h1, h2, h3..., p */
 
 h1, h2{
@@ -43,8 +46,6 @@ h3{
 	line-height: 0px;
 }
 
-
-
 h4{
 	font-family: 'Bebas Neue', cursive;
 	font-size: 1.8rem;
@@ -58,7 +59,6 @@ h4{
 section{
 padding-top: 50px;
 }
-
 
 
 
@@ -80,8 +80,6 @@ padding-top: 50px;
 	border: 1px solid;
 }
 
-
-
 a{
 	text-decoration: none;
 	color: rgb(237, 237, 237);
@@ -92,6 +90,8 @@ a:hover{
 	color: rgb(237, 237, 237);
 }
 
+
+
 /* header */
 
 header{
@@ -99,8 +99,6 @@ header{
 	background-image: url("../img/mosaique/mosaique-4.png");
 	background-position: center;
 }
-
-
 
 .flex-barre-de-navigation{
 	display: flex;
@@ -158,9 +156,8 @@ nav a:hover{
 
 
 
-
-
 /* footer */
+
 footer{
 	background-color: rgb(35, 35, 35);
 }
@@ -180,13 +177,6 @@ footer{
 	text-decoration: none;
 	padding: 20px 0px;
 }
-
-
-
-
-
-
-
 
 .btn-phone{
 	background-color: rgb(35, 35, 35);
@@ -214,8 +204,8 @@ footer{
 }
 
 
-/* Page index */
 
+/* Page index */
 
 /* Section nos burger */
 .flex-colonnes{
@@ -223,7 +213,6 @@ footer{
 	justify-content: center;
 	text-align: center;
 }
-
 
 .col-quart-carte img{
 	width: 100%;
@@ -239,7 +228,6 @@ footer{
 	padding-bottom: 50px;
 	}
 
-
 /* Section t-shirt */
 .dark{
 	background-color:  rgb(245, 195, 10);
@@ -248,8 +236,6 @@ footer{
 section{
 	overflow: hidden;
 }
-  
-
     
 .float-right{
 	float: right;
@@ -259,6 +245,7 @@ section{
 
 
 /* Page réservation (formulaire) */
+
 .flexbox-textPrenom-Nom{
 	display: flex;
 	flex-direction: row;
@@ -279,8 +266,6 @@ section{
 	min-height: 200px;
 }
 
-
-
 label{
 	padding: 1px 10px;
 }
@@ -295,7 +280,9 @@ input:focus{
 	}
 
 
+
 /* Page restaurant (Grid) */
+
 .grid{	
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -322,7 +309,6 @@ input:focus{
 	}
 
 
-/* Page ma commande */
 
 /* Page ma commande */
 
@@ -361,11 +347,8 @@ input:focus{
 	text-align: left;
 }
 
-
-
 .carte{
 	line-height: 1.5rem;
-	background-color: none;
 	border: 3px solid;
 	color: rgb(35, 35, 35);
 	padding: 15px 50px;
@@ -375,6 +358,8 @@ ul{
 	list-style-type: none;
 	text-align: left;
   }
+
+
 
 /* ------------- */
 /* MEDIA QUERIES */
