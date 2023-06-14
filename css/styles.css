@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600&display=swap');
 
 /*
-font-family: 'Bebas Neue', cursive; (h1, h2, h3...)
-font-family: 'Manrope', sans-serif; (p)
+font-family: 'Bebas Neue', cursive; (h1, h2, h4)
+font-family: 'Manrope', sans-serif; (h3, p)
 */
 
 *{ box-sizing: border-box;}
@@ -242,8 +242,6 @@ section{
 	margin-left: 30px;
 }
 
-
-
 /* Page réservation (formulaire) */
 
 .flexbox-textPrenom-Nom{
@@ -279,8 +277,6 @@ input:focus{
 	padding-bottom: 200px;
 	}
 
-
-
 /* Page restaurant (Grid) */
 
 .grid{	
@@ -307,8 +303,6 @@ input:focus{
 .image-grid-row-2{
 	grid-row: span 2;
 	}
-
-
 
 /* Page ma commande */
 
@@ -357,7 +351,7 @@ input:focus{
 ul{
 	list-style-type: none;
 	text-align: left;
-  }
+}
 
 
 
@@ -365,82 +359,204 @@ ul{
 /* MEDIA QUERIES */
 /* ------------- */
 
-
-.show-on-mobile{
-	/* Usage justifié de !important */
+.show-on-mobile {
 	display: none !important;
 }
 
-@media screen and (max-width: 1200px) {
-	.grid-colonnes-std{
-		grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 1200px){
+	/* Ces règles s'applique à 1200px et moins */
+
+	/* header */
+	.nav a, .nav a:hover{
+		padding: 5px 20px;
 	}
-	.boite h2{
-		font-size: 1.7rem;
+	
+	.btn-nav, .btn-nav:hover{
+		padding: 0px 30px;
 	}
-	.message img,
-	.message div{
-		width: 65%;
+	
+	/* footer */
+
+	/* Page Index */
+	.btn, .btn:hover{
+		padding: 5px 20px;
+		line-height: 30px;
 	}
 
-
-	
-	
-	
-	
-	.btn{
-	margin: 10px;
+/* Page Réservation */
+	.form{
+	margin: 20px;
 	}
+
+/* Page Restaurant */
+
+	.images-grid{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.image-grid-col-2{
+		grid-column: span 1;
+	}
+	
+	.image-grid-row-2{
+		grid-row: span 1;
+		}
+
+/* Page Commande */
 
 }
 
-@media screen and (max-width: 960px) {
 
-	h1, h2{
-		text-align: center;
+
+
+
+@media screen and (max-width: 960px) {
+	/* Ces règles s'applique à 960px et moins */
+
+	/* header */
+	/* Icône mobile : Ajouter un menu hamberger */
+
+	/* header */
+	.hide-on-mobile{
+		display: none !important;
 	}
 
-	.flex-colonnes{
-		flex-direction: row;
+	.show-on-mobile{
+	display: block !important;
+	}
+
+	/* footer */
+	.btn-phone, .btn-phone:hover{
+		padding: 5px 10px;
+	}
+	
+	.flex-footer p, .container-author{
+		font-size: 0.8rem;
+	}
+
+	/* Page Index */
+	.btn, .btn:hover{
+		padding: 5px 25px;
+	}
+
+	.flex-colonnes, .carte{
+		flex-direction: column;
 		width: auto;
 		align-items: center;
 	}
 	
-	.col-quart-carte img,
-	.col-demi-carte img{
-		width: 65%
-	}
-	
-	
-	.col-demi-carte img{
-		width: 100%;
+	h1, h2, h3{
 		text-align: center;
-		margin: 40px;
 	}
+
+	.float-right{
+			width: 40%;
+			display: flex;
+	}
+
+	.dark{
+		padding-bottom: 10px;
+	}
+
+/* Page Réservation */
+	.form{
+	margin: 20px;
+	}
+
+/* Page Confirmation */
+	.confirm h1{
+	text-align: left;
+	}
+
+/* Page Restaurant */
+
+	.images-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.container-grid h1{
+		text-align: center;
+	}
+
+/* Page Commande */
 
 }
 
+
+
 @media screen and (max-width: 570px) {
+	/* Ces règles s'applique à 570px et moins */
 
+	/* header */
+	.hide-on-mobile{
+		display: none !important;
+	}
 
+	.show-on-mobile{
+		display: block !important;
+	}
 
-	h1, h2{
+	/* Page Index */
+	.hide-on-mobile{
+		display: none !important;
+	}
+
+	h1, h2, h3, ha{
 		text-align: center;
 	}
 
-	.flex-colonnes{
+	.flex-colonnes, .carte{
 		flex-direction: column;
 		width: auto;
 		align-items: center;
 	}
 
-
-
-	.hide-on-mobile{
-		display: none !important;
+	.dark{
+		padding-bottom: 10px;
 	}
-	.show-on-mobile{
-		display: block !important;
+
+	.dark h4{
+		text-align: left;
+	}
+
+	.btn, .btn:hover{
+		padding: 5px 20px;
+	}
+
+	/* footer */
+	.btn-phone, .btn-phone:hover{
+		padding: 5px 5px;
+		font-size: 0.8rem;
+	}
+	
+	.flex-footer p, .container-author{
+		font-size: 0.8rem;
+	}
+
+/* Page Réservation */
+	.form{
+		margin: 20px;
+	}
+
+	/* Page Confirmation */
+	.container-confirm h1{
+		text-align: left;
+	}	
+
+/* Page Restaurant */
+
+	.images-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.container-grid h1{
+		text-align: center;
+	}
+
+/* Page Commande */
+	.conteneur-flex{
+		justify-content: center;
 	}
 
 }
