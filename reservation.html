@@ -50,7 +50,7 @@
                             </div>
                             <div>
                                 <label for="tel">Votre numéro de téléphone</label>
-                                <input type="tel" name="tel" id="tel" required>
+                                <input type="number" name="tel" id="tel" required>
                             </div>
                             <div>
                                 <label for="nbrQuantite">Nombre de personnes présentes pour la réservation</label>
@@ -60,19 +60,19 @@
                                 <label for="date">Date de la réservation</label>
                                 <input type="date" name="dateReservation" id="date">
                             </div>
-                            <!-- Erreur legend enfant -->
-                                <legend>Secteur de la réservation</legend>
-                                <div>
-                                    <input type="radio" name="option" id="option1" value="salle-a-manger" required>
-                                    <label for="option1">Salle à manger</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="option" id="option2" value="terrasse" required>
-                                    <label for="option2">Terrasse</label>
-                                </div>
-                    
+                        </fieldset>
+                        <fieldset>
+                            <legend>Secteur de la réservation</legend>
                             <div>
-                                <label for="inpGrandeur">L’heure de la réservation</label>
+                                <input type="radio" name="option" id="option1" value="salle-a-manger" required>
+                                <label for="option1">Salle à manger</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="option" id="option2" value="terrasse" required>
+                                <label for="option2">Terrasse</label>
+                            </div>
+                            <div>
+                                <label for="heure">L’heure de la réservation</label>
                                 <select name="heure" id="heure" required>
                                     <option value="">Heure de réservation</option>
                                     <option value="12:00">12:00</option>
